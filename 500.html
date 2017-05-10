@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> Error500</title>
+	<link rel="stylesheet" href="dist/css/Glitch.min.css" />
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="glitch error" data-text="ERROR500">ERROR500</h1>
+		<div class="over_error">
+			<div class="darkOverlay"></div>
+			<header>
+				<h1 class="glitch_error" data-text="500">500</h1>
+			</header>
+		</div>
+		<div class="glitch-img" style="background-image: url('dist/img/Glitch.png')"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js">
+	</script>
+	<script src="dist/js/Glitch.min.js"></script>
+	<script>
+		$(function () {
+			$(".glitch-img").mgGlitch({
+				destroy: !1,
+				glitch: !0,
+				scale: !0,
+				blend: !0,
+				blendModeType: "hue",
+				glitch1TimeMin: 600,
+				glitch1TimeMax: 900,
+				glitch2TimeMin: 10,
+				glitch2TimeMax: 115,
+				zIndexStart: 8
+			})
+		});
+	</script>
+</body>
+
+</html>
